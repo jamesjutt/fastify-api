@@ -1,0 +1,27 @@
+{
+  "name": "fastify-meetup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc && node .",
+    "start": "nodemon --watch src -e ts --exec npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@types/node": "^13.7.1",
+    "@types/pg": "^7.14.1",
+    "dotenv": "^8.2.0",
+    "fastify": "^2.12.0",
+    "fastify-postgres": "^2.0.0",
+    "nodemon": "^2.0.2",
+    "pg": "^7.18.1",
+    "pg-hstore": "^2.3.3",
+    "ts-node": "^8.6.2"
+  }
+}
